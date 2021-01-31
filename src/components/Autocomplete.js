@@ -52,7 +52,7 @@ export default function Autocomplete({ options }) {
             placeholder="Search all issues"
             onChange={handleAutocomplete}
             onKeyDown={handleKeyDown}
-            autocomplete="off"
+            autoComplete="off"
          />
          { showOptions && autocompleteInput ?
             suggestions && suggestions.length ?
