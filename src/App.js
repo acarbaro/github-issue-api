@@ -10,13 +10,9 @@ function App() {
   const [issues, setIssues] = useState([]);
   const [error, setError] = useState({ message: "", status: false });
   const [loading, setLoading] = useState(false);
-  
 
   useEffect(() => {
     getIssuesFromGithub();
-    return () => {
-      getIssuesFromGithub();
-    }
   }, [])
 
   const getIssuesFromGithub = async () => {
